@@ -12,40 +12,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="CheckFBHomePage.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/CheckFBHomePage.feature">
+      <file leaf-file-name="StepDefinitions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/StepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="1419">
+              <caret line="54" column="60" lean-forward="false" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1089">
-              <caret line="59" column="107" lean-forward="false" selection-start-line="59" selection-start-column="107" selection-end-line="59" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testlog.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/testlog.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
             <state relative-caret-position="231">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunCukesTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/RunCukesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+              <caret line="40" column="71" lean-forward="false" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -54,24 +35,38 @@
       <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="1122">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Reusable_Functions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/Reusable_Functions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1130">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="297">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WebDriver</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -87,15 +82,17 @@
         <option value="$PROJECT_DIR$/src/test/java/modules/SignInAction.java" />
         <option value="$PROJECT_DIR$/src/test/java/step_definitions/CheckFBHomePage.java" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definitions/StepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/helpers/Log.java" />
         <option value="$PROJECT_DIR$/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/pageobjects/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/CheckFBHomePage.feature" />
         <option value="$PROJECT_DIR$/src/test/java/step_definitions/RunCukesTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/CheckFBHomePage.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/pageobjects/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageobjects/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definitions/Reusable_Functions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definitions/StepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" />
       </list>
     </option>
   </component>
@@ -106,7 +103,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="668" />
     <option name="y" value="372" />
     <option name="width" value="1400" />
@@ -137,6 +134,11 @@
             <path>
               <item name="cucumber-java-template" type="b2602c69:ProjectViewProjectNode" />
               <item name="cucumber-jvm-template-master" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-java-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-jvm-template-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,14 +159,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cucumber-java-template" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cucumber-jvm-template-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cucumber-java-template" type="b2602c69:ProjectViewProjectNode" />
@@ -204,6 +198,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-java-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-jvm-template-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cucumber-java-template" type="b2602c69:ProjectViewProjectNode" />
@@ -494,7 +496,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -532,45 +534,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/testlog.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CheckFBHomePage.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/RunCukesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="104" lean-forward="false" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
-          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/StepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
@@ -587,8 +550,8 @@
           <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-            <element signature="e#1643#1644#0" expanded="false" />
+            <element signature="e#2359#2360#0" expanded="false" />
+            <element signature="e#2387#2388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -631,8 +594,8 @@
           <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-            <element signature="e#1643#1644#0" expanded="false" />
+            <element signature="e#2359#2360#0" expanded="false" />
+            <element signature="e#2387#2388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,8 +648,8 @@
           <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-            <element signature="e#1643#1644#0" expanded="false" />
+            <element signature="e#2359#2360#0" expanded="false" />
+            <element signature="e#2387#2388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,32 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/StepDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/helpers/DataHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -825,18 +762,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CheckFBHomePage.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/log/testlog.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="1130">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -849,31 +791,206 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/org/apache/commons/io/FileUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="666" column="23" lean-forward="false" selection-start-line="666" selection-start-column="23" selection-end-line="666" selection-end-column="23" />
+          <folding>
+            <marker date="1517289887813" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1517289887813" expanded="false" signature="145:1303" ph="..." />
+            <marker date="1517289887813" expanded="true" signature="2212:2219" ph="{}" />
+            <marker date="1517289887813" expanded="true" signature="2285:2821" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="2871:3405" ph="{...}" />
+            <marker date="1517289887813" expanded="false" signature="3454:3465" ph=" { " />
+            <marker date="1517289887813" expanded="false" signature="3509:3515" ph=" }" />
+            <marker date="1517289887813" expanded="false" signature="3558:3569" ph=" { " />
+            <marker date="1517289887813" expanded="false" signature="3609:3615" ph=" }" />
+            <marker date="1517289887813" expanded="false" signature="3664:3675" ph=" { " />
+            <marker date="1517289887813" expanded="false" signature="3714:3720" ph=" }" />
+            <marker date="1517289887813" expanded="false" signature="3763:3774" ph=" { " />
+            <marker date="1517289887813" expanded="false" signature="3814:3820" ph=" }" />
+            <marker date="1517289887813" expanded="true" signature="3902:4378" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="4462:4515" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="4615:5235" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="5302:6233" ph="{...}" />
+            <marker date="1517289887813" expanded="false" signature="6293:6304" ph=" { " />
+            <marker date="1517289887813" expanded="false" signature="6360:6366" ph=" }" />
+            <marker date="1517289887813" expanded="true" signature="6427:6770" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="6854:6923" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="7056:7640" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="7752:8157" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="8252:8520" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="8604:8740" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="8822:8973" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="9092:9580" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="9693:9771" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="9891:9976" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="10038:10241" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="10344:10714" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="10818:10896" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="10981:12064" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="12178:13525" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="13566:13859" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="13901:15383" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="15430:16016" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="16082:16261" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="16353:16413" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="16531:16962" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="17044:17094" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="17202:18425" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="18511:18738" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="18849:20225" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="20321:20971" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="21056:21109" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="21220:21303" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="21407:21468" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="21598:23154" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="23315:24922" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="25010:25117" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="25245:25525" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="25629:25973" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="26049:26382" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="26435:26854" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="26947:27581" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="27656:28736" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="28796:29281" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="29373:29652" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="29743:29819" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="29893:29965" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="30042:30309" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="30400:30678" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="30768:30837" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="30910:30975" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="31068:31433" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="31509:31565" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="31669:31732" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="31835:31898" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="32018:32270" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="32389:32473" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="32559:32638" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="32740:32820" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="32900:32967" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="33063:33131" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="33229:33280" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="33377:33428" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="33542:33665" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="33778:33850" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="33939:33995" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="34100:34333" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="34437:34508" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="34628:34700" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="34787:34862" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="34965:35041" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="35164:35233" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="35372:35746" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="35852:35925" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="36047:36121" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="36188:36644" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="36717:36860" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="36943:37137" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="37219:38305" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="38376:38853" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="38896:39151" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="39212:39499" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="39556:40269" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="40344:41016" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="41073:41334" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="41401:41757" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="41819:42004" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="42072:42319" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="42386:42742" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="42804:42989" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="43057:43304" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="43373:43473" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="43560:44033" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="44118:45353" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="45469:46255" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="46337:47475" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="47590:48383" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="48490:49066" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="49134:49770" ph="{...}" />
+            <marker date="1517289887813" expanded="true" signature="49783:50266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.0/cucumber-core-1.2.0.jar!/cucumber/api/Scenario.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.44.0/selenium-support-2.44.0.jar!/org/openqa/selenium/support/PageFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Screenshots/Login to Facebook and check for the Existence of Homepage/User_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/CheckFBHomePage.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/Reusable_Functions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/StepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="54" column="60" lean-forward="false" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
-          <caret line="59" column="107" lean-forward="false" selection-start-line="59" selection-start-column="107" selection-end-line="59" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/testlog.log">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="231">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <caret line="40" column="71" lean-forward="false" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
           <folding />
         </state>
       </provider>

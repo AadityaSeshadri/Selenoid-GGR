@@ -1,6 +1,8 @@
 package pageobjects;
 //import helpers.Log;
 
+import com.sun.java.swing.plaf.windows.WindowsInternalFrameTitlePane;
+import cucumber.api.Scenario;
 import helpers.Log;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -35,7 +37,7 @@ public class HomePage extends BaseClass{
 	{
 		if (Lnk_Home.isDisplayed())
 		{
-			Log.info("hi`");
+			//Log.info("hi`");
 			Log.info("Home page displayed");
 		}
 		else

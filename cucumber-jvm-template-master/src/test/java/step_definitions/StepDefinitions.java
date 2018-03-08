@@ -2,6 +2,7 @@ package step_definitions;
 
 import static org.testng.AssertJUnit.assertEquals;
 
+import cucumber.api.Scenario;
 import helpers.Log;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -16,19 +17,22 @@ import pageobjects.LoginPage;
 
 public class StepDefinitions {
     public WebDriver driver;
+    public Scenario scenario;
     //org.apache.log4j.Logger Log = org.apache.log4j.Logger.getLogger("StepDefinitions.java");
 
     public StepDefinitions()
     {
     	driver = Hooks.driver;
+    	 scenario = Hooks.scenario;
         PropertyConfigurator.configure("log4j.properties");
+
 
     }
 
 
     @When("^User Navigates to Facebook and Login with Username \"(.*?)\" and Password \"(.*?)\"$")
     public void user_Navigates_to_Facebook_and_Login_with_Username_and_Password(String arg1, String arg2) throws Throwable {
-
+        System.out.println("Scenario name inside -------------------------" + scenario.getName());
         //logger =
         PageFactory.initElements(driver, LoginPage.class);
         //logger.de
@@ -36,14 +40,19 @@ public class StepDefinitions {
         driver.get("https://www.facebook.com");
         Log.info("Navigated to Facebook");
 
+        //LoginPage.Enter_Username(arg1,scenario.getName(),scenario);
         LoginPage.Enter_Username(arg1);
         Log.info("Entered Username");
+        Reusable_Functions.Take_Screenshot(driver,scenario);
 
+        //LoginPage.Enter_Password(arg2,scenario);
         LoginPage.Enter_Password(arg2);
         Log.info("Entered Password");
+        Reusable_Functions.Take_Screenshot(driver,scenario);
 
         LoginPage.Click_Signin();
         Log.info("CLicked on sign in Button");
+        Reusable_Functions.Take_Screenshot(driver,scenario);
 
 
 

@@ -6,6 +6,5 @@ Feature: Login to Facebook and Check for Homepage
 
     Examples:
       | Username | Password |
-      |  aadityaapr5@gmail.com   |  Saraadi@90  |
-      |  aadityaapr5@gmail.com   |  Saraadi@0  |
+      |  aadityaapr5@gmail.com   |  Saraadi@9000099|
 

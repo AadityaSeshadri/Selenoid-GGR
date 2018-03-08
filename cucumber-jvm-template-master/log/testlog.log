@@ -1,0 +1,7 @@
+2018-03-08 13:59:33,728 - helpers.Log -INFO - Started Execution
+2018-03-08 13:59:38,828 - helpers.Log -INFO - Navigated to Facebook
+2018-03-08 13:59:38,829 - helpers.Log -INFO - Logged Entered Usernamer in Login Page
+2018-03-08 13:59:39,138 - helpers.Log -INFO - Entered Username
+2018-03-08 13:59:39,318 - helpers.Log -INFO - Password EnteredSaraadi@9000099
+2018-03-08 13:59:39,319 - helpers.Log -INFO - Entered Password
+2018-03-08 13:59:43,091 - helpers.Log -INFO - CLicked on sign in Button

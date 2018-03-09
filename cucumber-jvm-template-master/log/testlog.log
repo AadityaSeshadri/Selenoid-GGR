@@ -1,9 +1,0 @@
-2018-03-08 17:56:22,875 - helpers.Log -INFO - Started Execution
-2018-03-08 17:56:27,359 - helpers.Log -INFO - Navigated to Facebook
-2018-03-08 17:56:27,360 - helpers.Log -INFO - Logged Entered Usernamer in Login Page
-2018-03-08 17:56:27,593 - helpers.Log -INFO - Entered Username
-2018-03-08 17:56:28,159 - helpers.Log -INFO - Password EnteredSaraadi@90
-2018-03-08 17:56:28,160 - helpers.Log -INFO - Entered Password
-2018-03-08 17:56:34,970 - helpers.Log -INFO - CLicked on sign in Button
-2018-03-08 17:56:35,828 - helpers.Log -INFO - Home page displayed
-2018-03-08 17:56:35,850 - helpers.Log -INFO - Checked for Homepage

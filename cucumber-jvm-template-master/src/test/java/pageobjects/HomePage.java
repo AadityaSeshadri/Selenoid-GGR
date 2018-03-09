@@ -11,21 +11,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import step_definitions.Hooks;
 
 import java.util.logging.Logger;
 
-public class HomePage extends BaseClass{
+//public class HomePage extends BaseClass{
+	public class HomePage {
 
 	private static Logger logger;
 	//Logger logger ;
+	WebDriver driver = Hooks.driver;
 
-	public HomePage(WebDriver driver){
+	/*public HomePage(WebDriver driver){
 		super(driver);
-		//org.apache.log4j.Logger Log = org.apache.log4j.Logger.getLogger("HomePage.java");
-		//PropertyConfigurator.configure("log4j.properties");
-
-
-	}
+	}*/
 
 	//****************Place required to change when xpath or property changes
 	@FindBy(how=How.XPATH, using="//a[@class='_2s25']")

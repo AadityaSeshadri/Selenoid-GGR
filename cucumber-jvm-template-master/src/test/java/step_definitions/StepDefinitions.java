@@ -24,7 +24,7 @@ public class StepDefinitions {
     {
     	driver = Hooks.driver;
     	 scenario = Hooks.scenario;
-        PropertyConfigurator.configure("log4j.properties");
+
 
 
     }

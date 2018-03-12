@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
@@ -30,13 +31,32 @@ public class Hooks{
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
         Hooks.scenario = scenario;
-        Reusable_Functions.Set_PreRequisites(scenario);
-        Capabilities caps = new DesiredCapabilities();
+        //Reusable_Functions.Set_PreRequisites(scenario);
+
+        //Phantom Driver Headless Execution
+  /*Capabilities caps = new DesiredCapabilities();
         ((DesiredCapabilities) caps).setCapability("phantomjs.page.settings.userAgent", "Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/20100101 Firefox/22.0");
         File src = new File(System.getProperty("user.dir") +"//src//test//resources//Driver//phantomjs.exe");
         System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
         Log.info("Phantom Path Set");
-        driver = new PhantomJSDriver(caps);
+        driver = new PhantomJSDriver(caps);*/
+
+
+  //Chrome Headless
+/*      System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        options.addArguments("window-size=1200x600");
+        driver = new ChromeDriver(options);*/
+
+        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        options.addArguments("window-size=1200x600");
+        driver = new ChromeDriver(options);
+
+
+
         Log.info("Driver Initialized");
         Log.info("******Excecution  started for the scenario*****"+ scenario.getName());
        }

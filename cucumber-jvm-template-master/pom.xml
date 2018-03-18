@@ -11,6 +11,21 @@
 	<dependencies>
 		<dependency>
 			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>1.2.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.0</version>
 		</dependency>
@@ -102,11 +117,12 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-reports -->
 		<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-runner -->
-		<dependency>
+		<!-- Revert Back this -->
+		<!--<dependency>
 			<groupId>com.github.mkolisnyk</groupId>
 			<artifactId>cucumber-runner</artifactId>
 			<version>1.0.8</version>
-		</dependency>
+		</dependency>-->
 
 
 		<dependency>
@@ -121,6 +137,12 @@
 			<version>3.1.2</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.github.mkolisnyk</groupId>
+			<artifactId>cucumber-reports</artifactId>
+			<!--<version>1.0.7<11/version>-->
+			<version>1.0.7</version>
+		</dependency>
 
 	</dependencies>
 

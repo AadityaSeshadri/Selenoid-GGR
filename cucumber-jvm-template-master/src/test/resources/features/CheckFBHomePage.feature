@@ -1,9 +1,12 @@
 Feature: Login to Facebook and Check for Homepage
-@initial
-  Scenario Outline: Login to Facebook and check for the Existence of Homepage
-    When User Navigates to Facebook and Login with Username "<Username>" and Password "<Password>"
+@Login
+  Scenario: Facebook Login Positive
+    When User Logins Facebook
     Then User should be able to view Homepage
 
-    Examples:
-      | Username | Password |
-      |  aadityaapr5@gmail.com   |Velayaparuq112|
+  @Login
+  Scenario: Facebook Login Negative
+    When User Logins Facebook
+    Then User should be able to view Homepage
+
+

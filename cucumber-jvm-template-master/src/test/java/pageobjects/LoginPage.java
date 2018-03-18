@@ -37,6 +37,7 @@ import java.io.IOException;
 
 	public static void Enter_Username(String UName) throws IOException {
 		//Scenario scenario;
+		System.out.println("Inside Enter Username"+ UName);
 		Log.info("Logged Entered Usernamer in Login Page");
 		Txt_User_Name.clear();
 		Txt_User_Name.sendKeys(UName);
@@ -45,6 +46,7 @@ import java.io.IOException;
 
 	public static void Enter_Password(String Password)
 	{
+		System.out.println("Inside Enter Password"+ Password);
 		Txt_password.clear();
 		Txt_password.sendKeys(Password);
 

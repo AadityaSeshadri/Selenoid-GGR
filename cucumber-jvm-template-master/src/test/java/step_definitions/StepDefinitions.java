@@ -30,8 +30,10 @@ public class StepDefinitions {
     }
 
 
-    @When("^User Navigates to Facebook and Login with Username \"(.*?)\" and Password \"(.*?)\"$")
-    public void user_Navigates_to_Facebook_and_Login_with_Username_and_Password(String arg1, String arg2) throws Throwable {
+    //@When("^User Navigates to Facebook and Login with Username \"(.*?)\" and Password \"(.*?)\"$")
+    @When("^User Logins Facebook$")
+    public void user_Logins_Facebook() throws Throwable {
+      //  public void user_Navigates_to_Facebook_and_Login_with_Username_and_Password(String arg1, String arg2) throws Throwable {
         System.out.println("Scenario name inside -------------------------" + scenario.getName());
         //logger =
         PageFactory.initElements(driver, LoginPage.class);
@@ -41,12 +43,13 @@ public class StepDefinitions {
         Log.info("Navigated to Facebook");
 
         //LoginPage.Enter_Username(arg1,scenario.getName(),scenario);
-        LoginPage.Enter_Username(arg1);
+
+        LoginPage.Enter_Username(Reusable_Functions.hashMap.get("UserName"));
         Log.info("Entered Username");
         Reusable_Functions.Take_Screenshot(driver,scenario);
 
         //LoginPage.Enter_Password(arg2,scenario);
-        LoginPage.Enter_Password(arg2);
+        LoginPage.Enter_Password(Reusable_Functions.hashMap.get("Password"));
         Log.info("Entered Password");
         Reusable_Functions.Take_Screenshot(driver,scenario);
 

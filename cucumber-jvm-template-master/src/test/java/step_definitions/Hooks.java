@@ -4,10 +4,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.Collections;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.cucumber.listener.Reporter;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.github.mkolisnyk.cucumber.reporting.CucumberDetailedResults;
+import gherkin.formatter.model.Feature;
 import helpers.Log;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -30,6 +33,30 @@ public class Hooks{
     public static WebDriver driver;
     public static Scenario scenario;
     public static String OS_Name;
+
+    @Before("@Login")
+    public void first (Scenario scenario)
+    {
+        System.out.println("****************************************************************************");
+        try {
+            Reusable_Functions.getData(scenario.getName());
+        } catch (IOException e) {
+            System.out.println("Scenario Unable to Locate in Test Data");
+        }
+
+    }
+    @After("@Login")
+    public void after(Scenario scenario)
+    {
+        Collections.emptyMap();
+       /* for (Object objname : Reusable_Functions.hashMap.keySet()) {
+            //System.out.println(objname);
+            System.out.println(Reusable_Functions.hashMap.get(objname.toString()));
+
+        }*/
+        System.out.println("********" + Reusable_Functions.hashMap.get("DV1"));
+    }
+
 
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
@@ -108,13 +135,28 @@ public class Hooks{
                 //driver.quit();
             } catch (IOException e) {
             }
+
         }
 
         //driver.quit();
     }
     @After(order = 0)
-    public void AfterSteps() {
+    public void AfterSteps() throws InterruptedException {
+
+        CucumberDetailedResults results = new CucumberDetailedResults();
+        results.setOutputDirectory("target/");
+        results.setOutputName("cucumber-results");
+        results.setSourceFile(System.getProperty("user.dir")+"/target/cucumber.json");
+       // Thread.sleep(2000);
+        try {
+            results.execute(true,true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
         driver.quit();
+
     }
 
 

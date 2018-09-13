@@ -9,27 +9,15 @@ import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import sun.security.util.Debug;
 
 import java.io.File;
 
 
-/*@RunWith(Cucumber.class)
-//jsonReport = "target/cucumber.json",
-@ExtendedCucumberOptions(
-		retryCount = 0,
-		detailedReport = true,
-		detailedAggregatedReport = true,
-		overviewReport = true,
-		//coverageReport = true,
-		jsonUsageReport = "target/cucumber.json",
-		usageReport = true,
-		toPDF = true,
-		//excludeCoverageTags = {"@flaky" },
-		includeCoverageTags = {"@Login" },
-		outputFolder = "target/")*/
+
 @RunWith(ExtendedCucumber.class)
 @ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
-		retryCount = 0,
+		//retryCount = 0,
 		detailedReport = true,
 		detailedAggregatedReport = true,
 		overviewReport = true,
@@ -67,15 +55,19 @@ import java.io.File;
 
 public class RunCukesTest{
 
+	//private static final Debug FileReaderManager = ;
+
 	@AfterClass
 	public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File(System.getProperty("user.dir")+"\\src\\test\\resources\\extent-config.xml"));
+		Reporter.loadXMLConfig(new File(System.getProperty("user.dir")+"//configs//extent-config.xml"));
+		//Reporter.loadXMLConfig(new File(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath())));
 		Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
 		Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
 		Reporter.setSystemInfo("Machine", 	"Windows 10" + "64 Bit");
 		Reporter.setSystemInfo("Selenium", "3.7.0");
 		Reporter.setSystemInfo("Maven", "3.5.2");
 		Reporter.setSystemInfo("Java Version", "1.8.0_151");
+
 	}
 	
 }

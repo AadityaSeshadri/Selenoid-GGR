@@ -61,5 +61,16 @@ public class Reusable_Functions {
             }
             //System.out.println("*******************");
         }
+
+
+    }
+    public static void AddStepLogToReport(String message)
+    {
+        com.cucumber.listener.Reporter.addStepLog(message);
+    }
+
+    public static void AddScenarioLogToReport(String message)
+    {
+        com.cucumber.listener.Reporter.addScenarioLog(message);
     }
 }

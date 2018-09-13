@@ -21,9 +21,11 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+/*import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;*/
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -85,7 +87,7 @@ public class Hooks{
 
         //Chrome Headless with ternanry operator
         OS_Name =  System.getProperty("os.name");
-        OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver_Linux");
+        OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Driver/chromedriver_MAC");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         // options.addArguments("window-size=1200x600");
@@ -93,6 +95,21 @@ public class Hooks{
 
          Log.info("Driver Initialized");
         Log.info("******Excecution  started for the scenario*****"+ scenario.getName());
+     /*   DesiredCapabilities desiredCapabilities = DesiredCapabilities.safari();
+
+        SafariOptions safariOptions = new SafariOptions();
+
+        safariOptions.setUseCleanSession(true);
+
+        desiredCapabilities.setCapability(SafariOptions.CAPABILITY, safariOptions);
+
+        desiredCapabilities.setCapability(SafariOptions.CAPABILITY, new SafariOptions());*/
+
+        //WebDriver driver = new SafariDriver();
+
+
+
+        //driver.quit();
        }
 
      
@@ -140,25 +157,25 @@ public class Hooks{
 
         //driver.quit();
     }
-    @After(order = 0)
-    public void AfterSteps() throws InterruptedException {
+    //@After(order = 0)
+    /*public void AfterSteps() throws InterruptedException {
 
-        CucumberDetailedResults results = new CucumberDetailedResults();
-        results.setOutputDirectory("target/");
-        results.setOutputName("cucumber-results");
-        results.setSourceFile(System.getProperty("user.dir")+"/target/cucumber.json");
-       // Thread.sleep(2000);
-        try {
-            results.execute(true,true);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+            CucumberDetailedResults results = new CucumberDetailedResults();
+            results.setOutputDirectory("target/");
+            results.setOutputName("cucumber-results");
+            results.setSourceFile(System.getProperty("user.dir")+"/target/cucumber.json");
+            // Thread.sleep(2000);
+            try {
+                results.execute(true,true);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
 
         driver.quit();
 
     }
 
-
+*/
 
 }

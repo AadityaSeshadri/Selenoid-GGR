@@ -24,6 +24,8 @@ public class StepDefinitions {
     {
     	driver = Hooks.driver;
     	 scenario = Hooks.scenario;
+        PageFactory.initElements(driver, LoginPage.class);
+        PageFactory.initElements(driver, HomePage.class);
 
 
 
@@ -33,10 +35,11 @@ public class StepDefinitions {
     //@When("^User Navigates to Facebook and Login with Username \"(.*?)\" and Password \"(.*?)\"$")
     @When("^User Logins Facebook$")
     public void user_Logins_Facebook() throws Throwable {
+
       //  public void user_Navigates_to_Facebook_and_Login_with_Username_and_Password(String arg1, String arg2) throws Throwable {
         System.out.println("Scenario name inside -------------------------" + scenario.getName());
         //logger =
-        PageFactory.initElements(driver, LoginPage.class);
+
         //logger.de
         Log.info("Started Execution");
         driver.get("https://www.facebook.com");
@@ -63,7 +66,7 @@ public class StepDefinitions {
 
     @Then("^User should be able to view Homepage$")
     public void user_should_be_able_to_view_Homepage() throws Throwable {
-        PageFactory.initElements(driver, HomePage.class);
+
         HomePage.check_HomePage();
         Log.info("Checked for Homepage");
 

@@ -10,6 +10,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 import step_definitions.Hooks;
 import step_definitions.Reusable_Functions;
 
@@ -40,7 +41,9 @@ import java.io.IOException;
 		System.out.println("Inside Enter Username"+ UName);
 		Log.info("Logged Entered Usernamer in Login Page");
 		Txt_User_Name.clear();
+		Reusable_Functions.AddStepLogToReport("Username cleared new");
 		Txt_User_Name.sendKeys(UName);
+		Reusable_Functions.AddStepLogToReport("Username entered new  " + UName);
 
 	}
 

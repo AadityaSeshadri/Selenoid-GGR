@@ -4,7 +4,7 @@ Feature: Login to Facebook and Check for Homepage
     When User Logins Facebook
     Then User should be able to view Homepage
 
-  @Login
+  @Login111
   Scenario: Facebook Login Negative
     When User Logins Facebook
     Then User should be able to view Homepage

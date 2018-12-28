@@ -59,14 +59,14 @@ public class RunCukesTest{
 
 	@AfterClass
 	public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File(System.getProperty("user.dir")+"//configs//extent-config.xml"));
+		/*Reporter.loadXMLConfig(new File(System.getProperty("user.dir")+"//configs//extent-config.xml"));
 		//Reporter.loadXMLConfig(new File(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath())));
 		Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
 		Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
 		Reporter.setSystemInfo("Machine", 	"Windows 10" + "64 Bit");
 		Reporter.setSystemInfo("Selenium", "3.7.0");
 		Reporter.setSystemInfo("Maven", "3.5.2");
-		Reporter.setSystemInfo("Java Version", "1.8.0_151");
+		Reporter.setSystemInfo("Java Version", "1.8.0_151");*/
 
 	}
 	

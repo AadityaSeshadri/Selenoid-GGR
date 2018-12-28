@@ -8,5 +8,3 @@ Feature: Login to Facebook and Check for Homepage
   Scenario: Facebook Login Negative
     When User Logins Facebook
     Then User should be able to view Homepage
-
-

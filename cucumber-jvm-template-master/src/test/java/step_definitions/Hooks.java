@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Collections;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -12,6 +13,9 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.github.mkolisnyk.cucumber.reporting.CucumberDetailedResults;
 import gherkin.formatter.model.Feature;
 import helpers.Log;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,10 +24,13 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 /*import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;*/
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 import org.testng.annotations.AfterSuite;
@@ -32,7 +39,7 @@ import org.testng.annotations.BeforeSuite;
 import javax.imageio.ImageIO;
 
 public class Hooks{
-    public static WebDriver driver;
+    public static  WebDriver driver;
     public static Scenario scenario;
     public static String OS_Name;
 
@@ -62,54 +69,76 @@ public class Hooks{
 
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
+
         Hooks.scenario = scenario;
-        //Reusable_Functions.Set_PreRequisites(scenario);
 
-        //Phantom Driver Headless Execution
-  /*Capabilities caps = new DesiredCapabilities();
-        //((DesiredCapabilities) caps).setCapability("phantomjs.page.settings.userAgent", "Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/20100101 Firefox/22.0");
-        //((DesiredCapabilities) caps).setCapability("phantomjs.page.settings.userAgent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36");
-        ((DesiredCapabilities) caps).setCapability("phantomjs.page.settings.userAgent", "AppleWebKit/537.36 (KHTML, like Gecko)");
-        File src = new File(System.getProperty("user.dir") +"//src//test//resources//Driver//phantomjs.exe");
-        System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
-        Log.info("Phantom Path Set");
-        driver = new PhantomJSDriver(caps);*/
+       /* String Browser_To_Execute = System.getProperty("Browser");
 
+        if(Browser_To_Execute.equals("Chrome")||Browser_To_Execute.equals("chrome"))
+        {
+            OS_Name =  System.getProperty("os.name");
+            OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Driver/chromedriver_MAC");
+            ChromeOptions options = new ChromeOptions();
+            //options.addArguments("headless");
+            // options.addArguments("window-size=1200x600");
+            driver = new ChromeDriver(options);
+        }
+        if(Browser_To_Execute.equals("Chrome-Headless")||Browser_To_Execute.equals("chrome-headless"))
+        {
+            OS_Name =  System.getProperty("os.name");
+            OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Driver/chromedriver_MAC");
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            // options.addArguments("window-size=1200x600");
+            driver = new ChromeDriver(options);
+        }
+        if(Browser_To_Execute.equals("Firefox")||Browser_To_Execute.equals("firefox"))
+        {
+            OS_Name =  System.getProperty("os.name");
+            OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Driver/chromedriver_MAC");
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            // options.addArguments("window-size=1200x600");
+            driver = new ChromeDriver(options);
+        }*/
+        String FIREFOX = "firefox";
+        String IE = "ie";
+        String DEFAULT = "chrome";
+        String browser = System.getProperty("Browser");
 
-  //Chrome Headless without ternanry operator
-     /* System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        options.addArguments("window-size=1200x600");
-        driver = new ChromeDriver(options);
-        OS_Name =  System.getProperty("os.name");*/
+        if(browser.equals("IE"))
+        {
+            InternetExplorerDriverManager.getInstance().setup();
+            driver = new InternetExplorerDriver();
 
+        }
+        else if (browser.equals("CHROME"))
+        {
+            ChromeDriverManager.getInstance().setup();
+            driver = new ChromeDriver();
 
-        //Chrome Headless with ternanry operator
-        OS_Name =  System.getProperty("os.name");
-        OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Driver/chromedriver_MAC");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        // options.addArguments("window-size=1200x600");
-        driver = new ChromeDriver(options);
+        }
+        else if(browser.equals("FIREFOX"))
+        {
+            FirefoxDriverManager.getInstance().setup();
+            driver = new FirefoxDriver();
+
+        }
+        else if(browser.equals("HUB"))
+        {
+            DesiredCapabilities dr=null;
+
+                dr=DesiredCapabilities.chrome();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                dr.setBrowserName("chrome");
+                dr.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+                dr.setPlatform(Platform.LINUX);
+             driver=new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), dr);
+        }
 
          Log.info("Driver Initialized");
         Log.info("******Excecution  started for the scenario*****"+ scenario.getName());
-     /*   DesiredCapabilities desiredCapabilities = DesiredCapabilities.safari();
-
-        SafariOptions safariOptions = new SafariOptions();
-
-        safariOptions.setUseCleanSession(true);
-
-        desiredCapabilities.setCapability(SafariOptions.CAPABILITY, safariOptions);
-
-        desiredCapabilities.setCapability(SafariOptions.CAPABILITY, new SafariOptions());*/
-
-        //WebDriver driver = new SafariDriver();
-
-
-
-        //driver.quit();
        }
 
      
@@ -155,7 +184,7 @@ public class Hooks{
 
         }
 
-        //driver.quit();
+        driver.quit();
     }
     //@After(order = 0)
     /*public void AfterSteps() throws InterruptedException {

@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.48.0</version>
+			<version>3.4.0</version>
 		</dependency>
 
 		<dependency>
@@ -127,11 +127,13 @@
     </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
-        <dependency>
+
+       <!-- Just now commented <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
             <version>2.3.0</version>
         </dependency>
+        -->
 
         <!-- https://mvnrepository.com/artifact/javax.activation/javax.activation-api -->
         <dependency>
@@ -175,6 +177,12 @@
         <!--<version>1.0.7<11/version>-->
         <version>1.0.7</version>
     </dependency>
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 
 	</dependencies>
 

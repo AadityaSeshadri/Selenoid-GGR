@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -73,4 +74,19 @@ public class Reusable_Functions {
     {
         com.cucumber.listener.Reporter.addScenarioLog(message);
     }
+
+    public static  void ClearTextBox(WebElement element)
+    {
+        element.clear();
+    }
+
+    public static  void EnterTextBox(WebElement element,String Text)
+    {
+        element.sendKeys(Text);
+    }
+
+    public static void ButtonClick(WebElement element) {
+        element.click();
+    }
+
 }

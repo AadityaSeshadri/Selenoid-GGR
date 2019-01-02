@@ -118,6 +118,15 @@ public class Hooks{
             driver = new ChromeDriver();
 
         }
+        else if (browser.equals("CHROME-HEADLESS"))
+        {
+            ChromeDriverManager.getInstance().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            options.addArguments("window-size=1200x600");
+            driver = new ChromeDriver(options);
+
+        }
         else if(browser.equals("FIREFOX"))
         {
             FirefoxDriverManager.getInstance().setup();

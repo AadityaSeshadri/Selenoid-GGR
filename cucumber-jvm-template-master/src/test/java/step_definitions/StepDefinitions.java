@@ -18,7 +18,6 @@ import pageobjects.LoginPage;
 public class StepDefinitions {
     public WebDriver driver;
     public Scenario scenario;
-    //org.apache.log4j.Logger Log = org.apache.log4j.Logger.getLogger("StepDefinitions.java");
 
     public StepDefinitions()
     {
@@ -31,33 +30,18 @@ public class StepDefinitions {
 
     }
 
-
-    //@When("^User Navigates to Facebook and Login with Username \"(.*?)\" and Password \"(.*?)\"$")
-    @When("^User Logins Facebook$")
-    public void user_Logins_Facebook() throws Throwable {
-
-      //  public void user_Navigates_to_Facebook_and_Login_with_Username_and_Password(String arg1, String arg2) throws Throwable {
+    @When("^User Logins Facebook with Username \"(.*?)\"  and Password \"(.*?)\"$")
+    public void user_Logins_Facebook_with_Username_and_Password(String uname, String pass) throws Throwable {
         System.out.println("Scenario name inside -------------------------" + scenario.getName());
-        //logger =
-
-        //logger.de
-        Log.info("Started Execution");
+        Reusable_Functions.AddStepLogToReport("Execution Started");
         driver.get("https://www.facebook.com");
-        Log.info("Navigated to Facebook");
-
-        //LoginPage.Enter_Username(arg1,scenario.getName(),scenario);
-
-        LoginPage.Enter_Username(Reusable_Functions.hashMap.get("UserName"));
-        Log.info("Entered Username");
+        Reusable_Functions.AddStepLogToReport("Navigated to Facebook Website");
+        LoginPage.Enter_Username(uname);
         Reusable_Functions.Take_Screenshot(driver,scenario);
-
-        //LoginPage.Enter_Password(arg2,scenario);
-        LoginPage.Enter_Password(Reusable_Functions.hashMap.get("Password"));
-        Log.info("Entered Password");
+        LoginPage.Enter_Password(pass);
         Reusable_Functions.Take_Screenshot(driver,scenario);
 
         LoginPage.Click_Signin();
-        Log.info("CLicked on sign in Button");
         Reusable_Functions.Take_Screenshot(driver,scenario);
 
 

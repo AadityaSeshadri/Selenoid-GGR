@@ -26,39 +26,35 @@ import java.io.IOException;
 	public static WebElement Txt_User_Name;
 	
 	@FindBy(how=How.XPATH, using="//input[@id='pass']")
-	//@FindBy(how=How.ID, using="pass")
 	public static WebElement Txt_password;
 	
 	@FindBy(how=How.XPATH, using="//input[@value='Log In']")
-	//@FindBy(how=How.ID, using="loginbutton")
 	public static WebElement signin_button;
 	//****************Place required to change when xpath or property changes
 
 
 
 	public static void Enter_Username(String UName) throws IOException {
-		//Scenario scenario;
-		System.out.println("Inside Enter Username"+ UName);
-		Log.info("Logged Entered Usernamer in Login Page");
-		Txt_User_Name.clear();
-		Reusable_Functions.AddStepLogToReport("Username cleared new");
-		Txt_User_Name.sendKeys(UName);
-		Reusable_Functions.AddStepLogToReport("Username entered new  " + UName);
+
+		Reusable_Functions.ClearTextBox(Txt_User_Name);
+		Reusable_Functions.AddStepLogToReport("Username cleared");
+		Reusable_Functions.EnterTextBox(Txt_User_Name,UName);
+		Reusable_Functions.AddStepLogToReport("Username entered " + UName);
 
 	}
 
 	public static void Enter_Password(String Password)
 	{
-		System.out.println("Inside Enter Password"+ Password);
-		Txt_password.clear();
-		Txt_password.sendKeys(Password);
-
-		Log.info("Password Entered" + Password);
+		Reusable_Functions.ClearTextBox(Txt_password);
+		Reusable_Functions.AddStepLogToReport("Password cleared");
+		Reusable_Functions.EnterTextBox(Txt_password,Password);
+		Reusable_Functions.AddStepLogToReport("Password Entered XXXXXXXXX");
 	}
 
 	public static void Click_Signin()
 	{
-		signin_button.click();
+		Reusable_Functions.ButtonClick(signin_button);
+		Reusable_Functions.AddStepLogToReport("Sign in Button Clicked");
 	}
 }
 		

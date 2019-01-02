@@ -42,17 +42,6 @@ import java.io.File;
 		)
 		//tags = {"@initial"})
 
-/*@ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
-		retryCount = 3,
-		detailedReport = true,
-		detailedAggregatedReport = true,
-		overviewReport = true,
-		//coverageReport = true,
-		jsonUsageReport = "target/cucumber-usage.json",
-		usageReport = true,
-		toPDF = true,
-		outputFolder = "target/cucumber-html-report")*/
-
 public class RunCukesTest{
 
 	//private static final Debug FileReaderManager = ;

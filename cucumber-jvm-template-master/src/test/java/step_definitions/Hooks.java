@@ -72,9 +72,9 @@ public class Hooks{
 
         Hooks.scenario = scenario;
 
-       /* String Browser_To_Execute = System.getProperty("Browser");
+       String Browser_To_Execute = System.getProperty("Browser");
 
-        if(Browser_To_Execute.equals("Chrome")||Browser_To_Execute.equals("chrome"))
+       /*  if(Browser_To_Execute.equals("Chrome")||Browser_To_Execute.equals("chrome"))
         {
             OS_Name =  System.getProperty("os.name");
             OS_Name = OS_Name.contains("Windows")? System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\Driver\\chromedriver.exe"):System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Driver/chromedriver_MAC");

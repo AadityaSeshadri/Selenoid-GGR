@@ -14,9 +14,6 @@ import org.testng.Reporter;
 import step_definitions.Hooks;
 import step_definitions.Reusable_Functions;
 
-import java.io.File;
-import java.io.IOException;
-
 //public class LoginPage extends BaseClass{
 
 	public class LoginPage {

@@ -1,12 +1,7 @@
 package pageobjects;
 //import helpers.Log;
 
-import com.sun.java.swing.plaf.windows.WindowsInternalFrameTitlePane;
-import cucumber.api.Scenario;
-import helpers.Log;
-import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,8 +9,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import step_definitions.Hooks;
 import step_definitions.Reusable_Functions;
-
-import java.util.logging.Logger;
 
 //public class HomePage extends BaseClass{
 	public class HomePage {

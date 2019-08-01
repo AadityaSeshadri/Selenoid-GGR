@@ -1,22 +1,23 @@
 package pageobjects;
 //import helpers.Log;
 
-import cucumber.api.Scenario;
-import helpers.Log;
-import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.*;
+import java.io.IOException;
+
+import org.codehaus.plexus.logging.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
-import step_definitions.Hooks;
-import step_definitions.Reusable_Functions;
+
+import io.qameta.allure.Step;
+import step_definitions.*;
+import pageobjects.*;
 
 //public class LoginPage extends BaseClass{
 
 	public class LoginPage {
+		//Logger logger = Log.getLogData(Log.class.getName());
+		// Logger logger = Log.getLogData(Log.class.getName());
 	WebDriver driver = Hooks.driver;
 
 	@FindBy(how=How.XPATH, using="//input[@id='email']")
@@ -30,18 +31,23 @@ import step_definitions.Reusable_Functions;
 	//****************Place required to change when xpath or property changes
 
 
-
+	@Step("Entering user Name:{0}")
 	public static void Enter_Username(String UName) throws IOException {
-
+		//log.info("Inside Entering Username");
+		//logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
+		//log.info("@@@@@@@@@@@@@@Enter usernameo@@@@@@@@@@@");
 		Reusable_Functions.ClearTextBox(Txt_User_Name);
 		Reusable_Functions.AddStepLogToReport("Username cleared");
 		Reusable_Functions.EnterTextBox(Txt_User_Name,UName);
 		Reusable_Functions.AddStepLogToReport("Username entered " + UName);
+		
 
 	}
-
+	@Step("Entering Password:{0}")
 	public static void Enter_Password(String Password)
 	{
+		//logger.info("@@@@@@@@@@@@@@Enter Password@@@@@@@@@@@");
+		//log.info("Inside Entering Username");
 		Reusable_Functions.ClearTextBox(Txt_password);
 		Reusable_Functions.AddStepLogToReport("Password cleared");
 		Reusable_Functions.EnterTextBox(Txt_password,Password);
@@ -50,6 +56,7 @@ import step_definitions.Reusable_Functions;
 
 	public static void Click_Signin()
 	{
+		//log.info("@@@@@@@@@@@@@@Clock Sign ino@@@@@@@@@@@");
 		Reusable_Functions.ButtonClick(signin_button);
 		Reusable_Functions.AddStepLogToReport("Sign in Button Clicked");
 	}

@@ -3,10 +3,10 @@ package step_definitions;
 import cucumber.api.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//import org.apache.poi.xssf.usermodel.XSSFCell;
+//import org.apache.poi.xssf.usermodel.XSSFRow;
+//import org.apache.poi.xssf.usermodel.XSSFSheet;
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -38,7 +38,7 @@ public class Reusable_Functions {
     }
 
 
-    public static void getData(String ScenarioName) throws IOException {
+   /* public static void getData(String ScenarioName) throws IOException {
         InputStream ExcelFileToRead = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/testData/SampleData.xlsx");
         XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
 
@@ -65,6 +65,7 @@ public class Reusable_Functions {
 
 
     }
+    */
     public static void AddStepLogToReport(String message)
     {
         com.cucumber.listener.Reporter.addStepLog(message);

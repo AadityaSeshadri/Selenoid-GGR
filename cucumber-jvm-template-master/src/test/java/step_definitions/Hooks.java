@@ -1,46 +1,46 @@
 package step_definitions;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.URI;
 import java.util.Collections;
 
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.cucumber.listener.Reporter;
-import com.gargoylesoftware.htmlunit.BrowserVersion;
-import com.github.mkolisnyk.cucumber.reporting.CucumberDetailedResults;
-import gherkin.formatter.model.Feature;
-import helpers.Log;
-import io.github.bonigarcia.wdm.ChromeDriverManager;
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
-import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
+//import io.github.bonigarcia.wdm.ChromeDriverManager;
+//import io.github.bonigarcia.wdm.FirefoxDriverManager;
+//import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+//import pageobjects.LoggerMech;
 
-public class Hooks{
-    public static  WebDriver driver;
+public class Hooks {
+   
+     //final Logger logger = LoggerMech.getLogData(Logger.class.getName());
+
+    final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Hooks.class);
+    public static  RemoteWebDriver driver;
     public static Scenario scenario;
     public static String OS_Name;
 
-    @Before("@Login")
-    public void first (Scenario scenario)
+    //@Before("@Login")
+    /*public void first (Scenario scenario)
     {
-        System.out.println("****************************************************************************");
+        System.out.println("*******************************mv ***********************************");
         try {
-            Reusable_Functions.getData(scenario.getName());
+            //Reusable_Functions.getData(scenario.getName());
         } catch (IOException e) {
             System.out.println("Scenario Unable to Locate in Test Data");
         }
 
-    }
-    @After("@Login")
+    }*/
+    //@After("@Login")
     public void after(Scenario scenario)
     {
         Collections.emptyMap();
@@ -55,10 +55,11 @@ public class Hooks{
 
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
-
+        
+        System.out.println("*********************Inside Before********************");
         Hooks.scenario = scenario;
-
-       String Browser_To_Execute = System.getProperty("Browser");
+        //Log.startLog("Test starts in Hooks Before");
+       
 
        /*  if(Browser_To_Execute.equals("Chrome")||Browser_To_Execute.equals("chrome"))
         {
@@ -87,10 +88,11 @@ public class Hooks{
             // options.addArguments("window-size=1200x600");
             driver = new ChromeDriver(options);
         }*/
-        String FIREFOX = "firefox";
+        /*String FIREFOX = "firefox";
         String IE = "ie";
         String DEFAULT = "chrome";
         String browser = System.getProperty("Browser");
+        System.out.println("browser"+ browser);
 
         if(browser.equals("IE"))
         {
@@ -131,9 +133,28 @@ public class Hooks{
                 dr.setPlatform(Platform.LINUX);
              driver=new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), dr);
         }
+*/
 
-         Log.info("Driver Initialized");
-        Log.info("******Excecution  started for the scenario*****"+ scenario.getName());
+
+DesiredCapabilities capabilities = new DesiredCapabilities();
+/*capabilities.setBrowserName("chrome");
+capabilities.setVersion("75.0");*/
+
+capabilities.setBrowserName("firefox");
+capabilities.setVersion("68.0");
+
+capabilities.setCapability("enableVNC", true);
+capabilities.setCapability("enableVideo", true);
+capabilities.setCapability("enableLog", true);
+
+ driver = new RemoteWebDriver(
+   URI.create("http://127.0.0.1:4444/wd/hub").toURL(), 
+    //URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(), 
+    capabilities
+);
+     System.out.println("**************************Driver Initialized***************************************");;
+         log.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
+        log.info("@@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@"+ scenario.getName());
        }
 
      

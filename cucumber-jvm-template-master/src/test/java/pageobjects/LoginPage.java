@@ -18,6 +18,7 @@ import pageobjects.*;
 	public class LoginPage {
 		//Logger logger = Log.getLogData(Log.class.getName());
 		// Logger logger = Log.getLogData(Log.class.getName());
+		final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginPage.class);
 	WebDriver driver = Hooks.driver;
 
 	@FindBy(how=How.XPATH, using="//input[@id='email']")
@@ -35,10 +36,11 @@ import pageobjects.*;
 	public static void Enter_Username(String UName) throws IOException {
 		//log.info("Inside Entering Username");
 		//logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
-		//log.info("@@@@@@@@@@@@@@Enter usernameo@@@@@@@@@@@");
+		
 		Reusable_Functions.ClearTextBox(Txt_User_Name);
 		Reusable_Functions.AddStepLogToReport("Username cleared");
 		Reusable_Functions.EnterTextBox(Txt_User_Name,UName);
+		//log.info("@@@@@@@@@@@@@@Enter usernameo@@@@@@@@@@@     "+  UName  );
 		Reusable_Functions.AddStepLogToReport("Username entered " + UName);
 		
 
@@ -47,17 +49,19 @@ import pageobjects.*;
 	public static void Enter_Password(String Password)
 	{
 		//logger.info("@@@@@@@@@@@@@@Enter Password@@@@@@@@@@@");
-		//log.info("Inside Entering Username");
+		log.info("!!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!!");
 		Reusable_Functions.ClearTextBox(Txt_password);
 		Reusable_Functions.AddStepLogToReport("Password cleared");
 		Reusable_Functions.EnterTextBox(Txt_password,Password);
+		//log.info("@@@@@@@@@@@@@@Enter Password@@@@@@@@@@@     "+  Password  );
 		Reusable_Functions.AddStepLogToReport("Password Entered XXXXXXXXX");
 	}
 
 	public static void Click_Signin()
 	{
-		//log.info("@@@@@@@@@@@@@@Clock Sign ino@@@@@@@@@@@");
+		
 		Reusable_Functions.ButtonClick(signin_button);
+		//log.info("@@@@@@@@@@@@@@Click Sign ino@@@@@@@@@@@");
 		Reusable_Functions.AddStepLogToReport("Sign in Button Clicked");
 	}
 }

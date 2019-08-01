@@ -15,7 +15,7 @@ import step_definitions.Reusable_Functions;
 	public class HomePage {
 		//final Logger logger = Log.getLogData(Log.class.getName());
 		   //logger.Log.getLogData(Log.class.getName());
-	  final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(HomePage.class);
+	  final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(HomePage.class);
 	//Logger logger ;
 	WebDriver driver = Hooks.driver;
 
@@ -39,6 +39,7 @@ import step_definitions.Reusable_Functions;
 		}
 		Assert.assertTrue(Lnk_Home.isDisplayed());
 		Reusable_Functions.AddStepLogToReport("Home Page Displayed");
+		//log.info("@@@@@@@@@@@@@@Homepage Verifiedo@@@@@@@@@@@");
 		//log.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
 		
 

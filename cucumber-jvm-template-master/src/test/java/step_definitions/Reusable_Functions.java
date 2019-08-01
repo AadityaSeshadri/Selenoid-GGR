@@ -19,7 +19,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 
 public class Reusable_Functions {
-
+    final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Reusable_Functions.class);
     public static HashMap<String, String> hashMap = new HashMap<String, String>();
     public static void Take_Screenshot(WebDriver driver, Scenario scenario)
     {
@@ -79,15 +79,18 @@ public class Reusable_Functions {
     public static  void ClearTextBox(WebElement element)
     {
         element.clear();
+        log.info("Element----------"+ element.getText() + "Value is cleared");
     }
 
     public static  void EnterTextBox(WebElement element,String Text)
     {
         element.sendKeys(Text);
+        log.info("Element----------"+ element.getText() + "Value entered as-------"+ Text);
     }
 
     public static void ButtonClick(WebElement element) {
         element.click();
+        log.info("Element----------"+ element.getText() + "Button Clicked");
     }
 
 }

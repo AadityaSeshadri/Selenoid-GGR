@@ -19,12 +19,14 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 //import pageobjects.LoggerMech;
+import pageobjects.Utilites;
 
 public class Hooks {
    
-     //final Logger logger = LoggerMech.getLogData(Logger.class.getName());
+     final Logger logger = Utilites.getLogData(Logger.class.getName());
+     //final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Hooks.class);
 
-    final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Hooks.class);
+    //final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Hooks.class);
     public static  RemoteWebDriver driver;
     public static Scenario scenario;
     public static String OS_Name;
@@ -146,15 +148,15 @@ capabilities.setVersion("68.0");
 capabilities.setCapability("enableVNC", true);
 capabilities.setCapability("enableVideo", true);
 capabilities.setCapability("enableLog", true);
-
+logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
  driver = new RemoteWebDriver(
    URI.create("http://127.0.0.1:4444/wd/hub").toURL(), 
     //URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(), 
     capabilities
 );
      System.out.println("**************************Driver Initialized***************************************");;
-         log.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
-        log.info("@@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@"+ scenario.getName());
+         logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
+        logger.info("@@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@"+ scenario.getName());
        }
 
      
@@ -201,6 +203,7 @@ capabilities.setCapability("enableLog", true);
         }
 
         driver.quit();
+        logger.info("****************************Execution Finished**************************");
     }
     //@After(order = 0)
     /*public void AfterSteps() throws InterruptedException {

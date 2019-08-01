@@ -2,35 +2,14 @@
  [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
  [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
  [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
- [INFO] [Reusable_Functions] [ClearTextBox] Element----------[[RemoteWebDriver: firefox on ANY (92479d24-60d2-475e-9fea-8caa68b7f059)] -> xpath: //input[@id='email']]Value is cleared 
- [INFO] [Reusable_Functions] [EnterTextBox] Element----------[[RemoteWebDriver: firefox on ANY (92479d24-60d2-475e-9fea-8caa68b7f059)] -> xpath: //input[@id='email']]Value entered as-------liveyourlife5490@gmail.com 
- [INFO] [LoginPage] [Enter_Username] @@@@@@@@@@@@@@Enter usernameo@@@@@@@@@@@     liveyourlife5490@gmail.com 
- [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
- [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
- [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
- [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
- [INFO] [Reusable_Functions] [ClearTextBox] Element----------[[RemoteWebDriver: firefox on ANY (92479d24-60d2-475e-9fea-8caa68b7f059)] -> xpath: //input[@id='pass']]Value is cleared 
- [INFO] [Reusable_Functions] [EnterTextBox] Element----------[[RemoteWebDriver: firefox on ANY (92479d24-60d2-475e-9fea-8caa68b7f059)] -> xpath: //input[@id='pass']]Value entered as-------password@90 
- [INFO] [LoginPage] [Enter_Password] @@@@@@@@@@@@@@Enter Password@@@@@@@@@@@     password@90 
- [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
- [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
- [INFO] [Reusable_Functions] [ButtonClick] Element----------Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Log In']'Button Clicked 
- [INFO] [LoginPage] [Click_Signin] @@@@@@@@@@@@@@Click Sign ino@@@@@@@@@@@ 
- [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
- [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
- [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
- [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
- [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
  [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
  [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
- [INFO] [LoginPage] [Enter_Username] @@@@@@@@@@@@@@Enter usernameo@@@@@@@@@@@     liveyourlife5490@gmail.com 
  [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
  [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
  [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
  [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
  [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
  [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
- [INFO] [LoginPage] [Enter_Password] @@@@@@@@@@@@@@Enter Password@@@@@@@@@@@     password@90 
  [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
  [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
  [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 

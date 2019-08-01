@@ -79,18 +79,18 @@ public class Reusable_Functions {
     public static  void ClearTextBox(WebElement element)
     {
         element.clear();
-        log.info("Element----------"+ element.getText() + "Value is cleared");
+       log.info("Element----------"+ element.getAttribute("innerText") + "Value is cleared");
     }
 
     public static  void EnterTextBox(WebElement element,String Text)
     {
         element.sendKeys(Text);
-        log.info("Element----------"+ element.getText() + "Value entered as-------"+ Text);
+        log.info("Element----------"+ element.getAttribute("innerText")  + "Value entered as-------"+ Text);
     }
 
     public static void ButtonClick(WebElement element) {
         element.click();
-        log.info("Element----------"+ element.getText() + "Button Clicked");
+        log.info("Element----------"+ element.getAttribute("innerText")  + "Button Clicked");
     }
 
 }

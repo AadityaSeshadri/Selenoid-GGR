@@ -2,13 +2,14 @@
   "chrome": {
     "default": "75.0",
     "versions": {
-      "58.0": {
-        "image": "selenoid/chrome:75.0",
+      "75.0": {
+        "image": "selenoid/vnc:chrome_75.0",
         "port": "4444",
-        "path": "/",
-        "tmpfs": {
-          "/tmp": "size=128m"
-        }
+        "tmpfs": {"/tmp": "size=512m"},
+        "path" : "/wd/hub",
+        "hosts" : ["http://localhost"],
+        "shmSize" : 268435456,
+        "cpu" : "1.0"
       }
     }
   }

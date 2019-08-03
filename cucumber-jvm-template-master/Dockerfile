@@ -4,4 +4,6 @@ copy ./ ./cucumber-jvm-template-master
 
 workdir ./cucumber-jvm-template-master
 
-ENTRYPOINT ["mvn","test"]
+EXPOSE 4444
+#ENTRYPOINT ["mvn","test"]
+CMD ["mvn", "test"]

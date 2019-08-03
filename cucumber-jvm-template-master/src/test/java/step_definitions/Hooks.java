@@ -145,13 +145,15 @@ capabilities.setVersion("75.0");
 /*capabilities.setBrowserName("firefox");
 capabilities.setVersion("68.0");*/
 
+
+
 capabilities.setCapability("enableVNC", true);
 capabilities.setCapability("enableVideo", true);
 capabilities.setCapability("enableLog", true);
 logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
  driver = new RemoteWebDriver(
-   URI.create("http://127.0.0.1:4444/wd/hub").toURL(), 
-    //URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(), 
+   URI.create("http://selenoid:4444/wd/hub").toURL(),
+    //URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(),
     capabilities
 );
      System.out.println("**************************Driver Initialized***************************************");;

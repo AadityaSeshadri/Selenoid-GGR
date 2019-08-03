@@ -1,3 +1,155 @@
 [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
  [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [ERROR] [AllureLifecycle] [startStep] Could not start step: no test case running 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [ERROR] [AllureLifecycle] [updateStep] Could not update step: no step running 
+ [ERROR] [AllureLifecycle] [stopStep] Could not stop step: no step running 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
  

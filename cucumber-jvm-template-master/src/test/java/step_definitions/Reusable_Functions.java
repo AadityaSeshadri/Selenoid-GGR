@@ -90,7 +90,7 @@ public class Reusable_Functions {
 
     public static void ButtonClick(WebElement element) {
         element.click();
-        log.info("Element----------"+ element.getAttribute("innerText")  + "Button Clicked");
+        //log.info("Element----------"+ element.getAttribute("value")  + "Button Clicked");
     }
 
 }

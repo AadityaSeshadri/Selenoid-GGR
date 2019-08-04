@@ -2,14 +2,19 @@ version: '3.6'
 services:
   selenoid:
     image: "aerokube/selenoid:latest-release"
+    network_mode: bridge
     ports:
       - "4444:4444"
     volumes:
       - "$PWD:/etc/selenoid"
       - "//var/run/docker.sock:/var/run/docker.sock"
+      - "/tmp/videos:/opt/selenoid/video:rw"
     command: ["-conf", "/etc/selenoid/browsers.json"]
+    environment:
+      - OVERRIDE_VIDEO_OUTPUT_DIR=/tmp/videos
   selenoid-ui:
     image: "aerokube/selenoid-ui:latest-release"
+    network_mode: bridge
     links:
       - selenoid
     ports:
@@ -17,10 +22,13 @@ services:
     command: ["--selenoid-uri", "http://selenoid:4444"]
   seleniumcode:
     build: .
+    network_mode: bridge
+    links:
+      - selenoid
     volumes:
-      - "/tmp:/tmp/hosts:rw"
+      - "~/.m2:/root/.m2"
+
 
   dockerize:
     image: jwilder/dockerize
     command: [ "/bin/sh", "-c", "while true; do sleep 30; done;" ]
-

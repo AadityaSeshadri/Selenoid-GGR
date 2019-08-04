@@ -18,8 +18,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-//import pageobjects.LoggerMech;
 import pageobjects.Utilites;
+//import pageobjects.LoggerMech;
+
 
 public class Hooks {
    
@@ -152,7 +153,7 @@ capabilities.setCapability("enableVideo", true);
 capabilities.setCapability("enableLog", true);
 logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
  driver = new RemoteWebDriver(
-   URI.create("http://172.17.0.1:4444/wd/hub").toURL(),
+   URI.create("http://selenoid:4444/wd/hub").toURL(),
     //URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(),
     capabilities
 );

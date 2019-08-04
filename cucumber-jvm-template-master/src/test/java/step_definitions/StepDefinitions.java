@@ -1,13 +1,13 @@
 package step_definitions;
 
-import static org.testng.AssertJUnit.assertEquals;
+//import static org.testng.AssertJUnit.assertEquals;
 
 import cucumber.api.Scenario;
 //import helpers.Log;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+//import io.qameta.allure.Description;
+//import io.qameta.allure.Severity;
+//import io.qameta.allure.SeverityLevel;
+//import io.qameta.allure.Story;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -54,8 +54,8 @@ public class StepDefinitions {
 
 
     }
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Login Test")
+    //@Severity(SeverityLevel.CRITICAL)
+    //@Description("Login Test")
     @Then("^User should be able to view Homepage$")
     public void user_should_be_able_to_view_Homepage() throws Throwable {
 

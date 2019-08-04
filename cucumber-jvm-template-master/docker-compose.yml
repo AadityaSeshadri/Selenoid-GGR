@@ -1,7 +1,6 @@
 version: '3.6'
 services:
   selenoid:
-    network_mode: bridge
     image: "aerokube/selenoid:latest-release"
     ports:
       - "4444:4444"
@@ -11,9 +10,17 @@ services:
     command: ["-conf", "/etc/selenoid/browsers.json"]
   selenoid-ui:
     image: "aerokube/selenoid-ui:latest-release"
-    network_mode: bridge
     links:
       - selenoid
     ports:
       - "8080:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
+  seleniumcode:
+    build: .
+    volumes:
+      - "/tmp:/tmp/hosts:rw"
+
+  dockerize:
+    image: jwilder/dockerize
+    command: [ "/bin/sh", "-c", "while true; do sleep 30; done;" ]
+

@@ -6,7 +6,7 @@
         "image": "selenoid/vnc:chrome_75.0",
         "port": "4444",
         "tmpfs": {"/tmp": "size=512m"},
-        "path" : "/wd/hub",
+        "path" : "/",
         "shmSize" : 268435456,
         "cpu" : "1.0"
       }

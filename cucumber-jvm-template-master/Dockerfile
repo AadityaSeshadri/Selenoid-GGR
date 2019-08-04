@@ -4,6 +4,6 @@ copy ./ ./cucumber-jvm-template-master
 
 workdir ./cucumber-jvm-template-master
 
-EXPOSE 4444
-#ENTRYPOINT ["mvn","test"]
-CMD ["mvn", "test"]
+RUN mvn clean compile
+
+CMD [ "/bin/sh", "-c", "while sleep 3600; do :; done"]

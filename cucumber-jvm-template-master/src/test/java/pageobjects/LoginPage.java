@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import io.qameta.allure.Step;
+//import io.qameta.allure.Step;
 import step_definitions.*;
 import pageobjects.*;
 
@@ -32,7 +32,7 @@ import pageobjects.*;
 	//****************Place required to change when xpath or property changes
 
 
-	@Step("Entering user Name:{0}")
+	//@Step("Entering user Name:{0}")
 	public static void Enter_Username(String UName) throws IOException {
 		//log.info("Inside Entering Username");
 		//logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
@@ -45,7 +45,7 @@ import pageobjects.*;
 		
 
 	}
-	@Step("Entering Password:{0}")
+	//@Step("Entering Password:{0}")
 	public static void Enter_Password(String Password)
 	{
 		//logger.info("@@@@@@@@@@@@@@Enter Password@@@@@@@@@@@");

@@ -26,7 +26,8 @@ services:
     links:
       - selenoid
     volumes:
-      - "/tmp:/tmp/hosts:rw"
+      - "~/.m2:/root/.m2"
+
 
   dockerize:
     image: jwilder/dockerize

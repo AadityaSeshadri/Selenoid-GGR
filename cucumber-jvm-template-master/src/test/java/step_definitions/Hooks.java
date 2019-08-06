@@ -127,8 +127,8 @@ public class Hooks {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         
-        capabilities.setBrowserName("chrome"); 
-        capabilities.setVersion("76.0");
+        capabilities.setBrowserName("chrome");
+        capabilities.setVersion("62.0");
          
         /*capabilities.setBrowserName("firefox");
         capabilities.setVersion("68.0");*/

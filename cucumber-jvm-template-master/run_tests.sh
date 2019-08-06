@@ -8,5 +8,7 @@ set -e
 
 echo "#######################################################################"
 # Run tests
+docker pull selenoid/vnc:chrome_76.0
+
 docker-compose exec seleniumcode mvn clean test
 

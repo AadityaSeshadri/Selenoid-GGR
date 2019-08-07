@@ -58,7 +58,7 @@ public class Hooks {
 
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
-
+        Runtime.getRuntime().exec("/bin/bash -c docker exec -it    cucumber-jvm-template-master_selenoid_1        ++++++++++++++++This is inside Before++++++++++++++++");
         System.out.println("*********************Inside Before********************");
         Hooks.scenario = scenario;
         // Log.startLog("Test starts in Hooks Before");

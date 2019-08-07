@@ -1,0 +1,19 @@
+[INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------liveyourlife5490@gmail.com 
+ [INFO] [LoginPage] [Enter_Password] !!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!! 
+ [INFO] [Reusable_Functions] [ClearTextBox] Element----------Value is cleared 
+ [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ 

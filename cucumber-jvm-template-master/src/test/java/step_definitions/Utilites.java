@@ -1,4 +1,4 @@
-package pageobjects;
+package step_definitions;
 import java.io.File;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;

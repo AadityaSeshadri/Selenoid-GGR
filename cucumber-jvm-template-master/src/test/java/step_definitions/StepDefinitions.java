@@ -1,14 +1,5 @@
 package step_definitions;
-
-//import static org.testng.AssertJUnit.assertEquals;
-
 import cucumber.api.Scenario;
-//import helpers.Log;
-//import io.qameta.allure.Description;
-//import io.qameta.allure.Severity;
-//import io.qameta.allure.SeverityLevel;
-//import io.qameta.allure.Story;
-
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 
@@ -17,8 +8,6 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 import pageobjects.HomePage;
 import pageobjects.LoginPage;
-//import helpers.Log;
-
 
 public class StepDefinitions {
     public WebDriver driver;
@@ -34,9 +23,6 @@ public class StepDefinitions {
 
 
     }
-    //@Severity(SeverityLevel.CRITICAL)
-    //@Description("Login Test")
-    //@Story("Story Name : MOE213")
     @When("^User Logins Facebook with Username \"(.*?)\"  and Password \"(.*?)\"$")
     public void user_Logins_Facebook_with_Username_and_Password(String uname, String pass) throws Throwable {
         System.out.println("Scenario name inside -------------------------" + scenario.getName());
@@ -47,20 +33,12 @@ public class StepDefinitions {
         Reusable_Functions.Take_Screenshot(driver,scenario);
         LoginPage.Enter_Password(pass);
         Reusable_Functions.Take_Screenshot(driver,scenario);
-
         LoginPage.Click_Signin();
         Reusable_Functions.Take_Screenshot(driver,scenario);
-
-
-
     }
-    //@Severity(SeverityLevel.CRITICAL)
-    //@Description("Login Test")
     @Then("^User should be able to view Homepage$")
     public void user_should_be_able_to_view_Homepage() throws Throwable {
-
         HomePage.check_HomePage();
-        //Log.info("Checked for Homepage");
 
     }
 

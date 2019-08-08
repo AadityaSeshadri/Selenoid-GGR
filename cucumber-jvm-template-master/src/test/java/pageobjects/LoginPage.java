@@ -12,12 +12,7 @@ import org.openqa.selenium.support.How;
 //import io.qameta.allure.Step;
 import step_definitions.*;
 import pageobjects.*;
-
-//public class LoginPage extends BaseClass{
-
 	public class LoginPage {
-		//Logger logger = Log.getLogData(Log.class.getName());
-		// Logger logger = Log.getLogData(Log.class.getName());
 		final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginPage.class);
 	WebDriver driver = Hooks.driver;
 
@@ -29,14 +24,8 @@ import pageobjects.*;
 	
 	@FindBy(how=How.XPATH, using="//input[@value='Log In']")
 	public static WebElement signin_button;
-	//****************Place required to change when xpath or property changes
 
-
-	//@Step("Entering user Name:{0}")
 	public static void Enter_Username(String UName) throws IOException {
-		//log.info("Inside Entering Username");
-		//logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
-		
 		Reusable_Functions.ClearTextBox(Txt_User_Name);
 		Reusable_Functions.AddStepLogToReport("Username cleared");
 		Reusable_Functions.EnterTextBox(Txt_User_Name,UName);
@@ -45,15 +34,12 @@ import pageobjects.*;
 		
 
 	}
-	//@Step("Entering Password:{0}")
 	public static void Enter_Password(String Password)
 	{
-		//logger.info("@@@@@@@@@@@@@@Enter Password@@@@@@@@@@@");
 		log.info("!!!!!!!!!!!!!!Inside Entering Username!!!!!!!!!!!!!!!!!!!!!");
 		Reusable_Functions.ClearTextBox(Txt_password);
 		Reusable_Functions.AddStepLogToReport("Password cleared");
 		Reusable_Functions.EnterTextBox(Txt_password,Password);
-		//log.info("@@@@@@@@@@@@@@Enter Password@@@@@@@@@@@     "+  Password  );
 		Reusable_Functions.AddStepLogToReport("Password Entered XXXXXXXXX");
 	}
 
@@ -61,7 +47,6 @@ import pageobjects.*;
 	{
 		
 		Reusable_Functions.ButtonClick(signin_button);
-		//log.info("@@@@@@@@@@@@@@Click Sign ino@@@@@@@@@@@");
 		Reusable_Functions.AddStepLogToReport("Sign in Button Clicked");
 	}
 }

@@ -23,6 +23,8 @@ public class Hooks {
     public static String OS_Name;
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
+       // logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@"+ System.getProperty("Browser"));
+        //System.out.println("&&&&&&&&&&&&&&&&&&Browser Value&&&&&&&&&&&&&&&&&" + System.getProperty("Browser"));
         File file = new File(System.getProperty("user.dir") + "\\ExecutionLog.log"); 
         if(file.delete()) 
         { 
@@ -48,8 +50,9 @@ public class Hooks {
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableLog", true);
         logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
-        driver = new RemoteWebDriver(URI.create("http://selenoid:4444/wd/hub").toURL(),
-                // URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(),
+        driver = new RemoteWebDriver(
+               // URI.create("http://selenoid:4444/wd/hub").toURL(),
+                 URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
                 capabilities);
         System.out.println("**************************Driver Initialized***************************************");
         ;

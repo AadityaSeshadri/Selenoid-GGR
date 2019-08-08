@@ -42,5 +42,19 @@ public class StepDefinitions {
 
     }
 
+    @When("^User Logins Facebook with Username \"(.*?)\"  and Password \"(.*?)\"$")
+    public void User_Navigates_LandingPage(String uname, String pass) throws Throwable {
+        System.out.println("Scenario name inside -------------------------" + scenario.getName());
+        Reusable_Functions.AddStepLogToReport("Execution Started");
+        driver.get("https://www.facebook.com");
+        Reusable_Functions.AddStepLogToReport("Navigated to Facebook Website");
+        LoginPage.Enter_Username(uname);
+        Reusable_Functions.Take_Screenshot(driver,scenario);
+        LoginPage.Enter_Password(pass);
+        Reusable_Functions.Take_Screenshot(driver,scenario);
+        LoginPage.Click_Signin();
+        Reusable_Functions.Take_Screenshot(driver,scenario);
+    }
+
     
 }

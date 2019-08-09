@@ -99,8 +99,8 @@ public class Reusable_Functions {
 
 
 	public static void Navigate(WebDriver driver, String uRL) {
-        driver.get(uRL);
-        driver.manage().window().maximize() ;
+       driver.get(uRL);
+       driver.manage().window().maximize() ;
     }
     
  

@@ -38,4 +38,12 @@
  [INFO] [Reusable_Functions] [EnterTextBox] Element----------Value entered as-------password@90 
  [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
  [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Facebook Login 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
  

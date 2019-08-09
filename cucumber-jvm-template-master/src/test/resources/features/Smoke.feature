@@ -1,6 +1,6 @@
 Feature: Login to Facebook and Check for Homepage
   Background:
-  Given User Navigates to Landing Page 
+  Given User Navigates to Landing Page "Landing Page"
   |Landing Page|
     |https://webuildsg.github.io/data/|
 @Loginxxxxx

@@ -1,17 +1,13 @@
 package pageobjects;
 //import helpers.Log;
 
-import java.sql.Driver;
-
-import org.apache.commons.logging.Log;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.apache.log4j.Logger;
+
 import step_definitions.Hooks;
 import step_definitions.Reusable_Functions;
 //import pageobjects.Log;;
@@ -26,9 +22,11 @@ import step_definitions.Reusable_Functions;
 	//****************Place required to change when xpath or property changes
 
 
-	public static void Navigate_LandingPage(WebDriver driver,String URL)
+	public static void Navigate_LandingPage(String URL)
 	{
-		Reusable_Functions.Navigate(driver,URL);
+		Hooks.driver.get(URL);
+	
+		//Reusable_Functions.Navigate(driver,URL);
 
 	}
 	

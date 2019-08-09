@@ -3,13 +3,14 @@ package step_definitions;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
-import java.util.Collections;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -36,11 +37,11 @@ public class Hooks {
         Hooks.scenario = scenario;
         DesiredCapabilities capabilities = new DesiredCapabilities();
          //***********Chrome*********** */
-        /*capabilities.setBrowserName("chrome");
-        capabilities.setVersion("76.0");*/
+        capabilities.setBrowserName("chrome");
+        capabilities.setVersion("76.0");
         //***********FireFox***********/
-        capabilities.setBrowserName("firefox");
-        capabilities.setVersion("68.0");
+        //capabilities.setBrowserName("firefox");
+        //capabilities.setVersion("68.0");
         //***********Opera*********** */
         /*capabilities.setBrowserName("chrome");
         capabilities.setVersion("62.0");*/
@@ -48,8 +49,10 @@ public class Hooks {
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableLog", true);
         logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
-        driver = new RemoteWebDriver(URI.create("http://selenoid:4444/wd/hub").toURL(),
-                // URI.create("http://test:test-password@127.0.0,1:4444/wd/hub").toURL(),
+        driver = new RemoteWebDriver(
+            //URI.create("http://selenoid:4444/wd/hub").toURL(),
+            //URI.create("http://cucumber-jvm-template-master_selenoid_1:4444/wd/hub").toURL(),
+                 URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
                 capabilities);
         System.out.println("**************************Driver Initialized***************************************");
         ;

@@ -1,12 +1,17 @@
 package step_definitions;
-import cucumber.api.Scenario;
-import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.WebDriver;
 
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.support.PageFactory;
 import pageobjects.HomePage;
+import pageobjects.LandingPage;
 import pageobjects.LoginPage;
 
 public class StepDefinitions {
@@ -16,9 +21,10 @@ public class StepDefinitions {
     public StepDefinitions()
     {
     	driver = Hooks.driver;
-    	 scenario = Hooks.scenario;
+    	scenario = Hooks.scenario;
         PageFactory.initElements(driver, LoginPage.class);
         PageFactory.initElements(driver, HomePage.class);
+        PageFactory.initElements(driver, LandingPage.class);
 
 
 
@@ -42,7 +48,19 @@ public class StepDefinitions {
 
     }
 
+    @Given("^User Navigates to Landing Page$")
+    public void User_Navigates_Landing_Page(WebDriver driver,DataTable usercredentials) throws Throwable {
+        List<String> list = usercredentials.asList(String.class);
+
+        LandingPage.Navigate_LandingPage(driver, list.get(0));
+
+    }
   
+    @Then("^Validates Landing Page Elements$")
+    public void Validates_LandingPage(WebDriver driver) throws Throwable {
+        LandingPage.check_Landing_Page(driver);
+
+    }
 
     
 }

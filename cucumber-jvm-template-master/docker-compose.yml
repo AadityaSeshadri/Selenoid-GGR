@@ -10,8 +10,8 @@ services:
       - "//var/run/docker.sock:/var/run/docker.sock"
       - "/tmp/videos:/opt/selenoid/video:rw"
       - "/tmp/logs:/opt/selenoid/logs:rw"
-    #command: ["-conf", "/etc/selenoid/browsers_Chrome.json" ,
-    command: ["-conf", "/etc/selenoid/browsers_${Browser}.json" ,
+    command: ["-conf", "/etc/selenoid/browsers_Chrome.json" ,
+    #command: ["-conf", "/etc/selenoid/browsers_${Browser}.json" ,
      "-video-output-dir", "/opt/selenoid/video",
       "-log-output-dir", "/opt/selenoid/logs"]
     environment:
@@ -24,13 +24,13 @@ services:
     ports:
       - "8080:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
-  seleniumcode:
-    build: .
-    network_mode: bridge
-    links:
-      - selenoid
-    volumes:
-      - "~/.m2:/root/.m2"
-  dockerize:
-    image: jwilder/dockerize
-    command: [ "/bin/sh", "-c", "while true; do sleep 30; done;" ]
+  #seleniumcode:
+   # build: .
+   # network_mode: bridge
+    #links:
+    #  - selenoid
+   # volumes:
+    #  - "~/.m2:/root/.m2"
+ # dockerize:
+  #  image: jwilder/dockerize
+  #  command: [ "/bin/sh", "-c", "while true; do sleep 30; done;" ]

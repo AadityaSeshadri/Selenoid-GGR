@@ -3,6 +3,7 @@ package step_definitions;
 import cucumber.api.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.PropertyConfigurator;
+import org.junit.Assert;
 //import org.apache.poi.xssf.usermodel.XSSFCell;
 //import org.apache.poi.xssf.usermodel.XSSFRow;
 //import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -11,12 +12,15 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class Reusable_Functions {
     final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Reusable_Functions.class);
@@ -93,4 +97,21 @@ public class Reusable_Functions {
         //log.info("Element----------"+ element.getAttribute("value")  + "Button Clicked");
     }
 
+
+	public static void Navigate(WebDriver driver, String uRL) {
+        driver.get(uRL);
+        driver.manage().window().maximize() ;
+    }
+    
+ 
+	public static void waitForPageLoaded(WebDriver driver) {
+        ExpectedCondition<Boolean> pageLoadCondition = new
+                ExpectedCondition<Boolean>() {
+                    public Boolean apply(WebDriver driver) {
+                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+                    }
+                };
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(pageLoadCondition);
+	}
 }

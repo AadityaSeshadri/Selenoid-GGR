@@ -7,14 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import step_definitions.*;
 
-import step_definitions.Hooks;
-import step_definitions.Reusable_Functions;
 //import pageobjects.Log;;
 //public class HomePage extends BaseClass{
 	public class LandingPage {
 	  final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(HomePage.class);
-	 WebDriver driver = Hooks.driver;
+	 //WebDriver driver = Hooks.driver;
 	WebDriverWait wait  ;
 	//****************Place required to change when xpath or property changes
 	@FindBy(how=How.ID, using="search")
@@ -22,11 +21,11 @@ import step_definitions.Reusable_Functions;
 	//****************Place required to change when xpath or property changes
 
 
-	public static void Navigate_LandingPage(String URL)
+	public static void Navigate_LandingPage(WebDriver driver,String URL)
 	{
-		Hooks.driver.get(URL);
+		//Hooks.driver.get(URL);
 	
-		//Reusable_Functions.Navigate(driver,URL);
+		Reusable_Functions.Navigate(driver,URL);
 
 	}
 	

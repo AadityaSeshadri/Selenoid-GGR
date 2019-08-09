@@ -1,16 +1,9 @@
 package step_definitions;
 
-import com.cucumber.listener.Reporter;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
-import org.junit.AfterClass;
-import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import sun.security.util.Debug;
-
-import java.io.File;
+import org.junit.runner.RunWith;
 
 
 
@@ -25,13 +18,13 @@ import java.io.File;
 		usageReport = true,
 		toPDF = true,
 		//excludeCoverageTags = {"@flaky" },
-		//includeCoverageTags = {"@Login" },
+		includeCoverageTags = {"@Login" },
 		outputFolder = "target/")
 
 @CucumberOptions(
 		features = "classpath:features",
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-ExtendedReports/report.html"},
-		//tags = {"@Login"},
+		tags = {"@Login"},
 		monochrome = true
 		)
 public class RunCukesTest{
